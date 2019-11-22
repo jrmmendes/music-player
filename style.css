@@ -1,0 +1,49 @@
+.custom-audio-player {
+    margin-top: 1em;
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 10em;
+}
+
+.custom-audio-player > .progress-bar {
+    position: absolute;
+    width: 100%;
+    transition: width ease-in-out 200ms;
+    height: 2%;
+    content: " ";
+    background: red;
+    bottom: 0;
+    left: 0;
+}
+
+.custom-audio-player > .controls > .action {
+    padding: 1em;
+}
+
+.custom-audio-player.-playing > .controls > .play {
+    color: #888;
+    font-weight: normal;
+}
+
+.custom-audio-player > .controls > .play {
+    font-weight: bold;
+}
+
+.custom-audio-player.-playing > .controls > .pause {
+    color: black;
+    font-weight: bold;
+}
+
+.custom-audio-player > .controls > .pause {
+    color: #888;
+    font-weight: normal;
+}
+.custom-audio-player > .controls > .forward:active,
+.custom-audio-player > .controls > .backward:active {
+    font-weight: bold;
+}

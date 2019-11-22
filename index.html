@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vanilla JS Player - Live and Let Die</title>
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+    <div class="custom-audio-player" id="player1">
+        <audio class="audio-source" src="./live-and-let-die.mp3">
+        </audio>
+
+        <h1>Live and Let Die</h1>
+        
+        <div class="controls">
+            <button class="action play">[ PLAY ]</button>
+            <button class="action pause">[ PAUSE ]</button>
+            <button class="action forward">[ +10 ]</button>
+            <button class="action backward">[ -10 ]</button>
+        </div>
+
+        <div class="progress-bar">
+        </div>
+        
+    </div>
+
+    <div class="custom-audio-player" id="player2">
+        <audio class="audio-source" src="./europa.mp3">
+        </audio>
+
+        <h1>Europa</h1>
+        
+        <div class="controls">
+            <button class="action play">[ PLAY ]</button>
+            <button class="action pause">[ PAUSE ]</button>
+            <button class="action forward">[ +10 ]</button>
+            <button class="action backward">[ -10 ]</button>
+        </div>
+
+        <div class="progress-bar">
+        </div>
+        
+    </div>
+
+    <script src="./js/customPlayer2.js"></script>
+
+    <script>
+        const player1 = new Player({ audioElementId: 'player1' });
+        const player2 = new Player({ audioElementId: 'player2' });
+    </script>
+</body>
+</html>
